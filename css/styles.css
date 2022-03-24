@@ -28,6 +28,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  width: 928px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -136,6 +138,10 @@ button:focus,
   /* flexible box layout- single dimension layout */
   flex-direction: column;
   text-align: center;
+}
+
+.logo {
+  height: 120px;
 }
 
 .page-header {

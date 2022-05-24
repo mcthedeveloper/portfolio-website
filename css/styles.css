@@ -1,10 +1,14 @@
-/* Colors used
+/* 
+Colors used
 Text Color (Saturated Blue): #000;
 Backgrond Color (White): #fff;
 Anchor Links
-Visited links (Saturated blue): #638bb3; */
+Visited links (Saturated blue): #638bb3; 
+*/
 
-/* CSS Variables */
+/*------------------------------------*\
+  #ROOT AND #BODY
+\*------------------------------------*/
 :root {
   --background-color: #fff;
   --text-color: #000;
@@ -47,6 +51,8 @@ h3 {
   font-weight: 700;
 }
 
+/* LINKS */
+
 a {
   color: var(--archor-color);
 }
@@ -63,6 +69,24 @@ a:focus {
 a:active {
   color: var(--tertiary-color);
 }
+
+/* NAVIGATION IN HEADER */
+
+.navigation-list,
+.enjoy {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+/* BUTTONS */
 
 button,
 .button {
@@ -94,19 +118,7 @@ button:focus,
   color: var(--text-color);
 }
 
-.navigation-list,
-.enjoy {
-  list-style-type: none;
-}
-
-.navigation-list li {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.navigation-list__item--active {
-  text-decoration: none;
-}
+/* PROFILEPICTURE AND COLUMNS ON INDEX PAGE */
 
 .profile__portrait {
   float: left;
@@ -116,6 +128,8 @@ button:focus,
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
+/* MAIN DIVIDERS */
+
 .profile,
 .about,
 .contact {
@@ -124,12 +138,16 @@ button:focus,
   text-align: center;
 }
 
+/* CONTACT PAGE */
+
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 25px;
   text-align: left;
 }
+
+/* FOOTER /*
 
 .page-footer {
   /* Clears prior float values */
@@ -139,6 +157,8 @@ button:focus,
   flex-direction: column;
   text-align: center;
 }
+
+/*LOGO AND HEADER */
 
 .logo {
   height: 120px;
@@ -159,6 +179,8 @@ button:focus,
   flex-grow: 1;
   text-align: right;
 }
+
+/* GRIDS ON WORK PAGE */
 
 /* start grid fallback */
 .grid__item {
@@ -216,6 +238,8 @@ button:focus,
     font-size: 22px;
   }
 }
+
+/* ICONS ON ABOUT PAGE */
 
 @keyframes color-change {
   0% {
